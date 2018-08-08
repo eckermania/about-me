@@ -6,50 +6,67 @@ alert ('Let\'s give ' + userName + ' a nice round of applause! Ok, ' + userName 
 
 // Ask them 5 y/n questions
 
+var score = 0;
+
 var answerOne = prompt('Has Erin ever lived outside the United States?').toLowerCase();
 
 if (answerOne === 'y' || answerOne === 'yes') {
   alert('Nailed it! Erin has lived in both East Timor and Sierra Leone.');
+  score ++;
 } else {
   alert ('Ooh, actually the answer was yes - Erin has lived in East Timor and Sierra Leone. ');
 }
 console.log ('User was asked \'Has Erin ever lived outside the United States?\' and responded ' + answerOne);
 
+console.log ('User currently has a score of ' + score );
+
 var answerTwo = prompt ('Is Erin allergic to broccoli?').toLowerCase();
 
 if (answerTwo === 'n' || answerTwo === 'no') {
   alert('That is correct! While Erin has been known to jump off a bridge rather than eat broccoli, she is technically not allergic to it.');
+  score ++;
 } else {
   alert ('I\'m sorry, ' + userName + ', that is incorrect.  While she does hate broccoli with the fire of a thousand suns, she is not allergic to it.');
 }
 console.log ('User was asked \'Is Erin allergic to broccoli?\' and responded ' + answerTwo);
 
+console.log ('User currently has a score of ' + score );
+
 var answerThree = prompt ('Has Erin ever been to jail?').toLowerCase();
 
 if (answerThree === 'y' || answerThree === 'yes') {
   alert ('Well done, ' + userName + ', that is correct. Erin has never been arrested but she used to visit the jail frequently as a mental health liaison.');
+  score ++;
 } else {
   alert ('This was a bit of a trick question, actually - Erin HAS been to jail several times as part of her prior job as a Mental Health Jail Liaison. Ok, ok - I promise there won\'t be any more trick questions.');
 }
 console.log ('User was asked \'Has Erin ever been to jail?\' and responded ' + answerThree);
 
+console.log ('User currently has a score of ' + score );
+
 var answerFour = prompt ('Does Erin own a South Korean National Treasure?').toLowerCase();
 
 if (answerFour === 'y' || answerFour === 'yes') {
   alert ('You\'re darn right she does! Her dog, Norah, is a jindo - South Korea National Treasure #53.');
+  score ++;
 } else {
   alert ('Ok, ' + userName + ', I kind of feel like this one should have been a gimme given the specificity of the question. Erin\'s dog, Norah, is a jindo and considered a national treasure in her homeland of South Korea.');
 }
 console.log ('User was asked \'Does Erin own a South Korean National Treasure?\' and responded ' + answerFour);
 
+console.log ('User currently has a score of ' + score);
+
 var answerFive = prompt ('Is Erin\'s favorite genre of book post-apocalyptic fiction?').toLowerCase();
 
 if (answerFive === 'y' || answerFive === 'yes') {
   alert ('Nicely done! Post-apocalyptic fiction is Erin\'s favorite genre of book.  She\'s not morbid - she just likes to be prepared.');
+  score ++;
 } else {
   alert ('I\'m sorry, that is not correct. Post-apocalyptic fiction is definitely Erin\'s favorite book genre.');
 }
 console.log ('User was asked \'Is Erin\'s favorite genre of book post-apocalyptic fiction?\' and responded ' + answerFive );
+
+console.log ('User currently has a score of ' + score );
 
 alert ('And that brings us to the end of round one! We\'re going to take a short commercial break and when we come back, we\'ll see how ' + userName + ' does in the challenge round!' );
 
@@ -66,6 +83,7 @@ do {
   i++;
   if (answerSix === countriesTraveled) {
     alert('Great guess! Erin has traveled to 22 countries so far!');
+    score ++;
     i = 4;
   } else if (answerSix > countriesTraveled){
     alert('Ooh - that number is a little too high.');
@@ -76,14 +94,19 @@ do {
 }
 while (i<4);
 
+console.log ('User was asked how many countries they think Erin has traveled to and responded ' + answerSix);
+
+console.log ('User currently has a score of ' + score );
+
 alert ('Now for the final question. I\'ll give you six chances to guess at least one of Erin\'s hobbies.');
 
 var hobbies = ['reading', 'sewing', 'hiking'];
 
 for(i = 0; i < 6; i++) {
   var answerSeven = prompt('What do you think Erin enjoys doing in her free time?').toLowerCase;
-  if (answerSeven === hobbies[i]) {
+  if (answerSeven === hobbies [0] || hobbies[1] || hobbies [2]) {
     alert ('Good guess!');
+    score ++;
     break;
   }
   else {
@@ -92,3 +115,13 @@ for(i = 0; i < 6; i++) {
 }
 
 alert ('Erin\'s hobbies include reading, sewing, and hiking.');
+
+console.log ('User was asked what they think Erin enjoys doing in her free time and the user responded ' + answerSeven );
+
+console.log ('User currently has a score of ' + score );
+
+if (score > 5) {
+  alert('You got ' + score + ' out of 7 questions correct. Nicely done! Here is some more information about Erin\'s background.');
+} else {
+  alert ('You got ' + score + ' out of 7 questions correct.  Not to worry, here is some more information on Erin\'s background so you can do better next time.');
+}
