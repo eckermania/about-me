@@ -1,3 +1,29 @@
-* {color: blue;
-    background: grey;
+body {color:yellow;
+    background-image: url("../../about-me/img/marquee-border.png");
+    background-color: black;
+    background-repeat: no-repeat;
+    background-position: center top;
+    font-family: 'Trebuchet MS', Arial, sans-serif
+}
+h1 {text-align: center;
+    font-size: 5em;
+    margin-top: 50px
+}
+h2 {color: rgb(128,0,0);
+    font-size: 2em;
+    margin-top: 20px;
+    text-align: center
+}
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 20px;
+    width: 50%
+}
+th {text-align: left;
+    font-weight: bold;
+    padding: 10px
+}
+td {color: white;
+    padding: 10px
 }
