@@ -8,6 +8,7 @@ alert ('Let\'s give ' + userName + ' a nice round of applause! Ok, ' + userName 
 
 var score = 0;
 
+function answerCountOne(){
 var answerOne = prompt('Has Erin ever lived outside the United States?').toLowerCase();
 
 if (answerOne === 'y' || answerOne === 'yes') {
@@ -19,7 +20,10 @@ if (answerOne === 'y' || answerOne === 'yes') {
 console.log ('User was asked \'Has Erin ever lived outside the United States?\' and responded ' + answerOne);
 
 console.log ('User currently has a score of ' + score );
+}
+answerCountOne();
 
+function answerCountTwo(){
 var answerTwo = prompt ('Is Erin allergic to broccoli?').toLowerCase();
 
 if (answerTwo === 'n' || answerTwo === 'no') {
@@ -31,7 +35,10 @@ if (answerTwo === 'n' || answerTwo === 'no') {
 console.log ('User was asked \'Is Erin allergic to broccoli?\' and responded ' + answerTwo);
 
 console.log ('User currently has a score of ' + score );
+}
+answerCountTwo();
 
+function answerCountThree(){
 var answerThree = prompt ('Has Erin ever been to jail?').toLowerCase();
 
 if (answerThree === 'y' || answerThree === 'yes') {
@@ -44,6 +51,10 @@ console.log ('User was asked \'Has Erin ever been to jail?\' and responded ' + a
 
 console.log ('User currently has a score of ' + score );
 
+}
+answerCountThree();
+
+function answerCountFour(){
 var answerFour = prompt ('Does Erin own a South Korean National Treasure?').toLowerCase();
 
 if (answerFour === 'y' || answerFour === 'yes') {
@@ -56,6 +67,10 @@ console.log ('User was asked \'Does Erin own a South Korean National Treasure?\'
 
 console.log ('User currently has a score of ' + score);
 
+}
+answerCountFour();
+
+function answerCountFive(){
 var answerFive = prompt ('Is Erin\'s favorite genre of book post-apocalyptic fiction?').toLowerCase();
 
 if (answerFive === 'y' || answerFive === 'yes') {
@@ -67,6 +82,9 @@ if (answerFive === 'y' || answerFive === 'yes') {
 console.log ('User was asked \'Is Erin\'s favorite genre of book post-apocalyptic fiction?\' and responded ' + answerFive );
 
 console.log ('User currently has a score of ' + score );
+
+}
+answerCountFive();
 
 alert ('And that brings us to the end of round one! We\'re going to take a short commercial break and when we come back, we\'ll see how ' + userName + ' does in the challenge round!' );
 
@@ -80,6 +98,7 @@ alert('For your next question, to how many countries has Erin traveled? And, bec
 
 var i = 0;
 
+function answerCountSix(){
 do {
   var answerSix = parseInt(prompt('How many countries do you think Erin has traveled to?'));
   i++;
@@ -100,12 +119,15 @@ console.log ('User was asked how many countries they think Erin has traveled to 
 
 console.log ('User currently has a score of ' + score );
 
+}
+answerCountSix();
 // Ask them to guess the values of an array containing hobbies and give them six chances to get it right
 
 alert ('Now for the final question. I\'ll give you six chances to guess at least one of Erin\'s hobbies.');
 
 var hobbies = ['reading', 'sewing', 'hiking'];
 
+function answerCountSeven(){
 for(i = 0; i < 6; i++) {
   var correctAnswer = false;
   var answerSeven = prompt('What do you think Erin enjoys doing in her free time?').toLowerCase();
@@ -135,6 +157,9 @@ alert ('Erin\'s hobbies include reading, sewing, and hiking.');
 console.log ('User was asked what they think Erin enjoys doing in her free time and the user responded ' + answerSeven );
 
 console.log ('User currently has a score of ' + score );
+
+}
+answerCountSeven();
 
 // Provide them with their final score and transition them to the page
 

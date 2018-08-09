@@ -1,2 +1,2 @@
 # about-me
-Get to know Erin
+Functions put in written by Erin Eckerman and Joey Eisenzimmer!
