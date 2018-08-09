@@ -9,79 +9,79 @@ alert ('Let\'s give ' + userName + ' a nice round of applause! Ok, ' + userName 
 var score = 0;
 
 function answerCountOne(){
-var answerOne = prompt('Has Erin ever lived outside the United States?').toLowerCase();
+  var answerOne = prompt('Has Erin ever lived outside the United States?').toLowerCase();
 
-if (answerOne === 'y' || answerOne === 'yes') {
-  alert('Nailed it! Erin has lived in both East Timor and Sierra Leone.');
-  score ++;
-} else {
-  alert ('Ooh, actually the answer was yes - Erin has lived in East Timor and Sierra Leone. ');
-}
-console.log ('User was asked \'Has Erin ever lived outside the United States?\' and responded ' + answerOne);
+  if (answerOne === 'y' || answerOne === 'yes') {
+    alert('Nailed it! Erin has lived in both East Timor and Sierra Leone.');
+    score ++;
+  } else {
+    alert ('Ooh, actually the answer was yes - Erin has lived in East Timor and Sierra Leone. ');
+  }
+  console.log ('User was asked \'Has Erin ever lived outside the United States?\' and responded ' + answerOne);
 
-console.log ('User currently has a score of ' + score );
+  console.log ('User currently has a score of ' + score );
 }
 answerCountOne();
 
 function answerCountTwo(){
-var answerTwo = prompt ('Is Erin allergic to broccoli?').toLowerCase();
+  var answerTwo = prompt ('Is Erin allergic to broccoli?').toLowerCase();
 
-if (answerTwo === 'n' || answerTwo === 'no') {
-  alert('That is correct! While Erin has been known to jump off a bridge rather than eat broccoli, she is technically not allergic to it.');
-  score ++;
-} else {
-  alert ('I\'m sorry, ' + userName + ', that is incorrect.  While she does hate broccoli with the fire of a thousand suns, she is not allergic to it.');
-}
-console.log ('User was asked \'Is Erin allergic to broccoli?\' and responded ' + answerTwo);
+  if (answerTwo === 'n' || answerTwo === 'no') {
+    alert('That is correct! While Erin has been known to jump off a bridge rather than eat broccoli, she is technically not allergic to it.');
+    score ++;
+  } else {
+    alert ('I\'m sorry, ' + userName + ', that is incorrect.  While she does hate broccoli with the fire of a thousand suns, she is not allergic to it.');
+  }
+  console.log ('User was asked \'Is Erin allergic to broccoli?\' and responded ' + answerTwo);
 
-console.log ('User currently has a score of ' + score );
+  console.log ('User currently has a score of ' + score );
 }
 answerCountTwo();
 
 function answerCountThree(){
-var answerThree = prompt ('Has Erin ever been to jail?').toLowerCase();
+  var answerThree = prompt ('Has Erin ever been to jail?').toLowerCase();
 
-if (answerThree === 'y' || answerThree === 'yes') {
-  alert ('Well done, ' + userName + ', that is correct. Erin has never been arrested but she used to visit the jail frequently as a mental health liaison.');
-  score ++;
-} else {
-  alert ('This was a bit of a trick question, actually - Erin HAS been to jail several times as part of her prior job as a Mental Health Jail Liaison. Ok, ok - I promise there won\'t be any more trick questions.');
-}
-console.log ('User was asked \'Has Erin ever been to jail?\' and responded ' + answerThree);
+  if (answerThree === 'y' || answerThree === 'yes') {
+    alert ('Well done, ' + userName + ', that is correct. Erin has never been arrested but she used to visit the jail frequently as a mental health liaison.');
+    score ++;
+  } else {
+    alert ('This was a bit of a trick question, actually - Erin HAS been to jail several times as part of her prior job as a Mental Health Jail Liaison. Ok, ok - I promise there won\'t be any more trick questions.');
+  }
+  console.log ('User was asked \'Has Erin ever been to jail?\' and responded ' + answerThree);
 
-console.log ('User currently has a score of ' + score );
+  console.log ('User currently has a score of ' + score );
 
 }
 answerCountThree();
 
 function answerCountFour(){
-var answerFour = prompt ('Does Erin own a South Korean National Treasure?').toLowerCase();
+  var answerFour = prompt ('Does Erin own a South Korean National Treasure?').toLowerCase();
 
-if (answerFour === 'y' || answerFour === 'yes') {
-  alert ('You\'re darn right she does! Her dog, Norah, is a jindo - South Korea National Treasure #53.');
-  score ++;
-} else {
-  alert ('Ok, ' + userName + ', I kind of feel like this one should have been a gimme given the specificity of the question. Erin\'s dog, Norah, is a jindo and considered a national treasure in her homeland of South Korea.');
-}
-console.log ('User was asked \'Does Erin own a South Korean National Treasure?\' and responded ' + answerFour);
+  if (answerFour === 'y' || answerFour === 'yes') {
+    alert ('You\'re darn right she does! Her dog, Norah, is a jindo - South Korea National Treasure #53.');
+    score ++;
+  } else {
+    alert ('Ok, ' + userName + ', I kind of feel like this one should have been a gimme given the specificity of the question. Erin\'s dog, Norah, is a jindo and considered a national treasure in her homeland of South Korea.');
+  }
+  console.log ('User was asked \'Does Erin own a South Korean National Treasure?\' and responded ' + answerFour);
 
-console.log ('User currently has a score of ' + score);
+  console.log ('User currently has a score of ' + score);
 
 }
 answerCountFour();
 
 function answerCountFive(){
-var answerFive = prompt ('Is Erin\'s favorite genre of book post-apocalyptic fiction?').toLowerCase();
+  var answerFive = prompt ('Is Erin\'s favorite genre of book post-apocalyptic fiction?').toLowerCase();
 
-if (answerFive === 'y' || answerFive === 'yes') {
-  alert ('Nicely done! Post-apocalyptic fiction is Erin\'s favorite genre of book.  She\'s not morbid - she just likes to be prepared.');
-  score ++;
-} else {
-  alert ('I\'m sorry, that is not correct. Post-apocalyptic fiction is definitely Erin\'s favorite book genre.');
-}
-console.log ('User was asked \'Is Erin\'s favorite genre of book post-apocalyptic fiction?\' and responded ' + answerFive );
+  if (answerFive === 'y' || answerFive === 'yes') {
+    alert ('Nicely done! Post-apocalyptic fiction is Erin\'s favorite genre of book.  She\'s not morbid - she just likes to be prepared.');
+    score ++;
+  } else {
+    alert ('I\'m sorry, that is not correct. Post-apocalyptic fiction is definitely Erin\'s favorite book genre.');
+  }
+  console.log ('User was asked \'Is Erin\'s favorite genre of book post-apocalyptic fiction?\' and responded ' + answerFive );
 
-console.log ('User currently has a score of ' + score );
+  console.log ('User currently has a score of ' + score );
 
 }
 answerCountFive();
@@ -99,25 +99,25 @@ alert('For your next question, to how many countries has Erin traveled? And, bec
 var i = 0;
 
 function answerCountSix(){
-do {
-  var answerSix = parseInt(prompt('How many countries do you think Erin has traveled to?'));
-  i++;
-  if (answerSix === countriesTraveled) {
-    alert('Great guess! Erin has traveled to 22 countries so far!');
-    score ++;
-    i = 4;
-  } else if (answerSix > countriesTraveled){
-    alert('Ooh - that number is a little too high.');
-  } else if (answerSix < countriesTraveled){
-    alert('Ooh - that number is too low.');
-  } else {alert('I\'m sorry - I didn\'t understand your response. Please phrase your guess in the form of a number.');
+  do {
+    var answerSix = parseInt(prompt('How many countries do you think Erin has traveled to?'));
+    i++;
+    if (answerSix === countriesTraveled) {
+      alert('Great guess! Erin has traveled to 22 countries so far!');
+      score ++;
+      i = 4;
+    } else if (answerSix > countriesTraveled){
+      alert('Ooh - that number is a little too high.');
+    } else if (answerSix < countriesTraveled){
+      alert('Ooh - that number is too low.');
+    } else {alert('I\'m sorry - I didn\'t understand your response. Please phrase your guess in the form of a number.');
+    }
   }
-}
-while (i<4);
+  while (i<4);
 
-console.log ('User was asked how many countries they think Erin has traveled to and responded ' + answerSix);
+  console.log ('User was asked how many countries they think Erin has traveled to and responded ' + answerSix);
 
-console.log ('User currently has a score of ' + score );
+  console.log ('User currently has a score of ' + score );
 
 }
 answerCountSix();
@@ -128,35 +128,35 @@ alert ('Now for the final question. I\'ll give you six chances to guess at least
 var hobbies = ['reading', 'sewing', 'hiking'];
 
 function answerCountSeven(){
-for(i = 0; i < 6; i++) {
-  var correctAnswer = false;
-  var answerSeven = prompt('What do you think Erin enjoys doing in her free time?').toLowerCase();
+  for(i = 0; i < 6; i++) {
+    var correctAnswer = false;
+    var answerSeven = prompt('What do you think Erin enjoys doing in her free time?').toLowerCase();
 
-  // Check their answer against all of the hobbies in the array
+    // Check their answer against all of the hobbies in the array
 
-  for(var j = 0; j< hobbies.length; j++)
-  {
-    if (answerSeven === hobbies[j])
+    for(var j = 0; j< hobbies.length; j++)
     {
-      alert ('Good guess!');
-      score ++;
-      correctAnswer = true;
+      if (answerSeven === hobbies[j])
+      {
+        alert ('Good guess!');
+        score ++;
+        correctAnswer = true;
+        break;
+      }
+    }
+    // If they get the answer right, move on to the next block
+    if(correctAnswer === true)
+    {
       break;
+    } else {
+      alert ('Nope - that is not one of Erin\'s hobbies.');
     }
   }
-  // If they get the answer right, move on to the next block
-  if(correctAnswer === true)
-  {
-    break;
-  } else {
-    alert ('Nope - that is not one of Erin\'s hobbies.');
-  }
-}
-alert ('Erin\'s hobbies include reading, sewing, and hiking.');
+  alert ('Erin\'s hobbies include reading, sewing, and hiking.');
 
-console.log ('User was asked what they think Erin enjoys doing in her free time and the user responded ' + answerSeven );
+  console.log ('User was asked what they think Erin enjoys doing in her free time and the user responded ' + answerSeven );
 
-console.log ('User currently has a score of ' + score );
+  console.log ('User currently has a score of ' + score );
 
 }
 answerCountSeven();
