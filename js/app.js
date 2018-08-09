@@ -72,6 +72,8 @@ alert ('And that brings us to the end of round one! We\'re going to take a short
 
 alert ('And we\'re back! ' + userName + ', are you ready for the challenge round?');
 
+// Ask them a question that requires an answer that is an integer and give them four chances to get the right answer
+
 var countriesTraveled = 22;
 
 alert('For your next question, to how many countries has Erin traveled? And, because I like you, ' + userName + ', I\'ll give you a hint - the number is between 10 and 30 - and I\'ll give you 4 chances to get it right.');
@@ -89,7 +91,7 @@ do {
     alert('Ooh - that number is a little too high.');
   } else if (answerSix < countriesTraveled){
     alert('Ooh - that number is too low.');
-  } else {prompt('I\'m sorry - I didn\'t understand your response. Please phrase your guess in the form of a number.');
+  } else {alert('I\'m sorry - I didn\'t understand your response. Please phrase your guess in the form of a number.');
   }
 }
 while (i<4);
@@ -98,27 +100,43 @@ console.log ('User was asked how many countries they think Erin has traveled to 
 
 console.log ('User currently has a score of ' + score );
 
+// Ask them to guess the values of an array containing hobbies and give them six chances to get it right
+
 alert ('Now for the final question. I\'ll give you six chances to guess at least one of Erin\'s hobbies.');
 
 var hobbies = ['reading', 'sewing', 'hiking'];
 
 for(i = 0; i < 6; i++) {
-  var answerSeven = prompt('What do you think Erin enjoys doing in her free time?').toLowerCase;
-  if (answerSeven === hobbies [0] || hobbies[1] || hobbies [2]) {
-    alert ('Good guess!');
-    score ++;
-    break;
+  var correctAnswer = false;
+  var answerSeven = prompt('What do you think Erin enjoys doing in her free time?').toLowerCase();
+
+  // Check their answer against all of the hobbies in the array
+
+  for(var j = 0; j< hobbies.length; j++)
+  {
+    if (answerSeven === hobbies[j])
+    {
+      alert ('Good guess!');
+      score ++;
+      correctAnswer = true;
+      break;
+    }
   }
-  else {
+  // If they get the answer right, move on to the next block
+  if(correctAnswer === true)
+  {
+    break;
+  } else {
     alert ('Nope - that is not one of Erin\'s hobbies.');
   }
 }
-
 alert ('Erin\'s hobbies include reading, sewing, and hiking.');
 
 console.log ('User was asked what they think Erin enjoys doing in her free time and the user responded ' + answerSeven );
 
 console.log ('User currently has a score of ' + score );
+
+// Provide them with their final score and transition them to the page
 
 if (score > 5) {
   alert('You got ' + score + ' out of 7 questions correct. Nicely done! Here is some more information about Erin\'s background.');

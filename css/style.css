@@ -1,29 +1,25 @@
-body {color:yellow;
-    background-image: url("../../about-me/img/marquee-border.png");
-    background-color: black;
-    background-repeat: no-repeat;
-    background-position: center top;
-    font-family: 'Trebuchet MS', Arial, sans-serif
+body {color: black;
+    background-color:#ffedb5;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
 }
-h1 {text-align: center;
-    font-size: 5em;
-    margin-top: 50px
+h1 {color: #ff5419;
+    font-size: 50px;
+    margin: 50px 50px 30px 50px}
+h2 {color:#263a7a;
+    font-size: 25px;
+    margin: 15px 50px 15px 100px;
+    padding:10px 0px 0px 0px;
 }
-h2 {color: rgb(128,0,0);
-    font-size: 2em;
-    margin-top: 20px;
-    text-align: center
+p {margin: 30px 50px 15px 50px}
+em {font-style:italic}
+
+ul {
+    list-style-type:disc;
+    margin: 20px 100px;
 }
-table {
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 20px;
-    width: 50%
+ol {list-style-type: decimal;
+    margin: 20px 100px;
 }
-th {text-align: left;
-    font-weight: bold;
-    padding: 10px
-}
-td {color: white;
-    padding: 10px
-}
+img {height:40px;
+margin-left:50px;
+float:left}
