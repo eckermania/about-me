@@ -8,6 +8,7 @@ alert ('Let\'s give ' + userName + ' a nice round of applause! Ok, ' + userName 
 
 var score = 0;
 
+function answerCountOne(){
 var answerOne = prompt('Has Erin ever lived outside the United States?').toLowerCase();
 
 if (answerOne === 'y' || answerOne === 'yes') {
@@ -19,6 +20,9 @@ if (answerOne === 'y' || answerOne === 'yes') {
 console.log ('User was asked \'Has Erin ever lived outside the United States?\' and responded ' + answerOne);
 
 console.log ('User currently has a score of ' + score );
+}
+answerCountOne();
+
 
 var answerTwo = prompt ('Is Erin allergic to broccoli?').toLowerCase();
 
